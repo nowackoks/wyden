@@ -1,0 +1,8 @@
+org\example\logging\MicrosecondsConverter.class
+org\example\api\http\SubscribeController.class
+org\example\Application.class
+org\example\exception\BinanceApiException.class
+org\example\PropertyLoader.class
+org\example\exception\NoAssetDefinedException.class
+org\example\BinanceApiWebSocketListener.class
+org\example\event\TickerEvent.class
