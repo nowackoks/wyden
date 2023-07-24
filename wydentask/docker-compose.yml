@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  wydentask:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "59000:59000"
+    command: [ "java", "-jar", "target/wydentask-1.1.jar", "btcusdt", "ethusdt" ]

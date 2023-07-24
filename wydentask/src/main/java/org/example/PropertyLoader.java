@@ -22,7 +22,14 @@ public class PropertyLoader {
     }
 
     public static BigDecimal getMarginPercent() {
-        return new BigDecimal(properties.getProperty("price.margin.percent"));
+        return new BigDecimal(properties.getProperty("price.margin.percent", "0.001"));
     }
 
+    public static int getStreamsLimit() {
+        return Integer.parseInt(properties.getProperty("streams.limit", "1"));
+    }
+
+    public static long getEventCooldownMs() {
+        return Long.parseLong(properties.getProperty("event.cooldown.ms", "1000"));
+    }
 }
